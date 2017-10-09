@@ -1,0 +1,159 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: 0 solid transparent
+}
+
+body {
+	background: #fff;
+	color: #333;
+	font-size: 12px;
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+}
+
+td,
+th,
+caption {
+	font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+input,
+textarea,
+select,
+button {
+	font: 12px Verdana, Helvetica, Arial, sans-serif;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+
+/****清除浮动和跨界影响***/
+
+.clear_float:after {
+	content: '  ';
+	display: table;
+	clear: both;
+}
+
+.clear_margin:before {
+	content: '  ';
+	display: table;
+}
+
+
+/*苹果手机样式初始化*/
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+	-webkit-appearance: none;
+	outline: none;
+}
+
+input {
+	-webkit-appearance: none;
+}
+
+textarea {
+	-webkit-appearance: none;
+}
+input:focus{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-user-modify:read-write-plaintext-only;
+}
+
+html{font-size:10px}
+@media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}
+@media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}
+@media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}}
+@media screen and (min-width:640px) and (max-width:719px){html{font-size:20px}}
+@media screen and (min-width:720px) and (max-width:749px){html{font-size:22.5px}}
+@media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}
+@media screen and (min-width:800px){html{font-size:25px}}
+/*动态londing*/
+.loadingCommon {
+	-webkit-transform: rotate(0deg) translateZ(0);
+	-webkit-transition-duration: 0;
+	-webkit-animation-name: loadingCommon;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes loadingCommon {
+	from {
+		-webkit-transform: rotate(0deg) translateZ(0);
+	}
+	to {
+		-webkit-transform: rotate(360deg) translateZ(0);
+	}
+}
+
+.alertOpenBox  .a2{
+	background: url("../img/other/XX.png") no-repeat center;
+	background-size:3rem
+}
